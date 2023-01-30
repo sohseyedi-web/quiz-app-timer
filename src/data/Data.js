@@ -14,8 +14,8 @@ export const quizItems = [
         title: "کدام یک زبان برنامه نویسی نیست؟",
         answers: [
             {text: "Python", correct: false},
-            {text: "JavaScript", correct: true},
-            {text: "MC-03", correct: false},
+            {text: "JavaScript", correct: false},
+            {text: "MC-03", correct: true},
             {text: "Java", correct: false},
         ]
     },

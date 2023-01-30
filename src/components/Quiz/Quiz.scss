@@ -1,17 +1,24 @@
-.quiz{
+.quiz {
   display: flex;
   min-height: 100vh;
   background-color: #252525;
   color: #fff;
 
-  &-box{
+  &-box {
     width: 80%;
 
-    &__head{
+    &__cash {
+      display: grid;
+      place-items: center;
+      font-size: 1.5rem;
+      min-height: 100vh;
+    }
+
+    &__head {
       height: 50%;
       position: relative;
 
-      &-timing{
+      &-timing {
         position: absolute;
         content: '';
         border-radius: 50%;
@@ -27,37 +34,131 @@
         font-size: 1.7rem;
       }
     }
-    &__bottom{
+
+    &__body {
       height: 50%;
+
+      &-items {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+
+        &__title {
+          width: 80%;
+          margin: 0 auto;
+          border-radius: .5rem;
+          background-color: #252525;
+          padding: 1.2rem;
+          border: 2px solid #fff;
+          text-align: center;
+          font-size: 1.2rem;
+        }
+
+        &__result {
+          width: 80%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          margin: 0 auto;
+
+          &-text {
+            width: 45%;
+            padding: .7rem;
+            margin: 1rem 0;
+            text-align: center;
+            cursor: pointer;
+            border: 2px solid #fff;
+            border-radius: .5rem;
+            transition: all .4s ease-in-out;
+
+            &:hover, &.active-text {
+              background-color: rgb(99, 102, 241);
+              transition: all .4s ease-in-out;
+            }
+
+            &.correct-text {
+              animation: correct 3s ease forwards;
+            }
+
+            &.error-text {
+              animation: error 3s ease forwards;
+            }
+          }
+        }
+      }
     }
   }
-  &-money{
+
+  &-money {
     width: 20%;
     background-color: #16161a;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    &__list{
+    &__list {
       padding: 1.2rem;
       width: 100%;
       list-style-type: none;
 
-      &-item{
+      &-item {
         display: flex;
         align-items: center;
         padding: .5rem;
         border-radius: .5rem;
 
-        &__number{
+        &.active-item {
+          background-color: rgb(99, 102, 241);
+        }
+
+        &__number {
           width: 30%;
           font-size: 1.05rem;
         }
-        &__amount{
+
+        &__amount {
           width: 70%;
           font-size: 1.2rem;
+          text-align: center;
         }
       }
     }
+  }
+}
+
+@keyframes correct {
+  0%,
+  22%,
+  42% {
+    background: rgb(99, 102, 241);
+  }
+  20%,
+  40%,
+  60% {
+    background: #eee;
+  }
+  62%,
+  100% {
+    background: green;
+  }
+}
+
+@keyframes error {
+  0%,
+  22%,
+  42% {
+    background: rgb(99, 102, 241);
+  }
+  20%,
+  40%,
+  60% {
+    background: #eee;
+  }
+  62%,
+  100% {
+    background: #ff0000;
   }
 }
