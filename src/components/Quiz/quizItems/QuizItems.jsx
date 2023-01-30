@@ -14,23 +14,30 @@ const QuizItems = ({question, setQuestion, setTime}) => {
     }, [quizItems, question])
 
     const nextQuiz = (res) => {
-        setResult(res);
-        setClassName("quiz-box__body-items__result-text active-text");
-        delay(3000, () => {
-            setClassName(res.correct ? "quiz-box__body-items__result-text correct-text" : "quiz-box__body-items__result-text error-text")
-        })
 
-        delay(5000, () => {
-            if (res.correct) {
-                delay(1000, () => {
-                    setQuestion((prev) => prev + 1);
-                    setResult(null);
-                })
-            } else {
-                delay(1000, () => setTime(true))
-            }
-        })
+            setResult(res);
+            setClassName("quiz-box__body-items__result-text active-text");
+            delay(3000, () => {
+                setClassName(res.correct ? "quiz-box__body-items__result-text correct-text" : "quiz-box__body-items__result-text error-text")
+            })
+
+            delay(3000, () => {
+                if (res.correct) {
+                    delay(1000, () => {
+                        setQuestion((prev) => prev + 1);
+                        setResult(null);
+                    })
+                } else {
+                    delay(1000, () => setTime(true))
+                }
+            })
+
     }
+
+    useEffect(() => {
+        if(question - 1 === quizItems.length) return setTime(true)
+    } , [question])
+
 
     return (
         <section className="quiz-box__body-items">

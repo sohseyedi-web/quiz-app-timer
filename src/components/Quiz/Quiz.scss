@@ -3,6 +3,7 @@
   min-height: 100vh;
   background-color: #252525;
   color: #fff;
+  position: relative;
 
   &-box {
     width: 80%;
@@ -80,11 +81,11 @@
             }
 
             &.correct-text {
-              animation: correct 3s ease forwards;
+              animation: correct 1.5s ease forwards;
             }
 
             &.error-text {
-              animation: error 3s ease forwards;
+              animation: error 1.5s ease forwards;
             }
           }
         }
@@ -122,11 +123,20 @@
         &__amount {
           width: 70%;
           font-size: 1.2rem;
-          text-align: center;
         }
       }
     }
   }
+
+  @media screen  and (max-width: 992px){
+    &-box{
+      width: 75%;
+    }
+    &-money{
+      width: 25%;
+    }
+  }
+
 }
 
 @keyframes correct {

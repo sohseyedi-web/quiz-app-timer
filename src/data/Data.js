@@ -51,132 +51,102 @@ export const quizItems = [
     },
     {
         id: 6,
-        title: "کدام گزینه تولید کننده موبایل میباشد؟",
+        title: "نام ورزشگاه ملی انگلیس؟",
         answers: [
-            {text: "Kiwi", correct: false},
-            {text: "Orange", correct: false},
-            {text: "Banana", correct: false},
-            {text: "Apple", correct: true},
+            {text: "ومبلی", correct: true},
+            {text: "نیوکمپ", correct: false},
+            {text: "ملکه", correct: false},
+            {text: "سن سیرو", correct: false},
         ]
     },
     {
         id: 7,
-        title: "کدام گزینه تولید کننده موبایل میباشد؟",
+        title: "مدیرعامل اپل؟",
         answers: [
-            {text: "Kiwi", correct: false},
-            {text: "Orange", correct: false},
-            {text: "Banana", correct: false},
-            {text: "Apple", correct: true},
+            {text: "استیو جابز", correct: false},
+            {text: "تیم کوک", correct: true},
+            {text: "ایلان ماسک", correct: false},
+            {text: "بیل گیتس", correct: false},
         ]
     },
     {
         id: 8,
-        title: "کدام گزینه تولید کننده موبایل میباشد؟",
+        title: "قهرمان جام جهانی 2010",
         answers: [
-            {text: "Kiwi", correct: false},
-            {text: "Orange", correct: false},
-            {text: "Banana", correct: false},
-            {text: "Apple", correct: true},
+            {text: "ایران", correct: false},
+            {text: "آمریکا", correct: false},
+            {text: "آرژانتین", correct: false},
+            {text: "اسپانیا", correct: true},
         ]
     },
     {
         id: 9,
-        title: "کدام گزینه تولید کننده موبایل میباشد؟",
+        title: "پر فروش ترین گوشی تاریخ",
         answers: [
-            {text: "Kiwi", correct: false},
-            {text: "Orange", correct: false},
-            {text: "Banana", correct: false},
-            {text: "Apple", correct: true},
+            {text: "Nokia 1200", correct: false},
+            {text: "LG G2", correct: false},
+            {text: "iphone 5s", correct: false},
+            {text: "Nokia 1100", correct: true},
         ]
     },
     {
         id: 10,
-        title: "کدام گزینه تولید کننده موبایل میباشد؟",
+        title: "اخرین سلسله پادشاهی قبل حمله اعراب؟",
         answers: [
-            {text: "Kiwi", correct: false},
-            {text: "Orange", correct: false},
-            {text: "Banana", correct: false},
-            {text: "Apple", correct: true},
+            {text: "افشاریه", correct: false},
+            {text: "ساسانیان", correct: true},
+            {text: "قاجار", correct: false},
+            {text: "اشکانیان", correct: false},
         ]
     },
     {
         id: 11,
-        title: "کدام گزینه تولید کننده موبایل میباشد؟",
+        title:"فاتح هندوستان؟",
         answers: [
-            {text: "Kiwi", correct: false},
-            {text: "Orange", correct: false},
-            {text: "Banana", correct: false},
-            {text: "Apple", correct: true},
+            {text: "من", correct: false},
+            {text: "شاهرخ خان", correct: false},
+            {text: "نادرشاه", correct: true},
+            {text: "کریم خان", correct: false},
         ]
     },
     {
         id: 12,
-        title: "کدام گزینه تولید کننده موبایل میباشد؟",
+        title: "اولین سری ویندوز در چه تاریخی انتشار یافت؟",
         answers: [
-            {text: "Kiwi", correct: false},
-            {text: "Orange", correct: false},
-            {text: "Banana", correct: false},
-            {text: "Apple", correct: true},
+            {text: "2000", correct: false},
+            {text: "2007", correct: false},
+            {text: "1985", correct: true},
+            {text: "1991", correct: false},
         ]
     },
     {
         id: 13,
-        title: "کدام گزینه تولید کننده موبایل میباشد؟",
+        title: "کارگردان فیلم راکی؟",
         answers: [
-            {text: "Kiwi", correct: false},
-            {text: "Orange", correct: false},
-            {text: "Banana", correct: false},
-            {text: "Apple", correct: true},
+            {text: "استیون اسپیلبرگ", correct: false},
+            {text: "جان جی آویلدسن", correct: true},
+            {text: "سیلور استالونه", correct: false},
+            {text: "جیمز کراب", correct: false},
         ]
     },
     {
         id: 14,
-        title: "کدام گزینه تولید کننده موبایل میباشد؟",
+        title: "(1+7+7-6*25+12) x 0?",
         answers: [
-            {text: "Kiwi", correct: false},
-            {text: "Orange", correct: false},
-            {text: "Banana", correct: false},
-            {text: "Apple", correct: true},
+            {text: "560", correct: false},
+            {text: "1240", correct: false},
+            {text: "0", correct: true},
+            {text: "110", correct: false},
         ]
     },
     {
         id: 15,
-        title: "کدام گزینه تولید کننده موبایل میباشد؟",
+        title: "اول مرغ بود یا تخم مرغ",
         answers: [
-            {text: "Kiwi", correct: false},
-            {text: "Orange", correct: false},
-            {text: "Banana", correct: false},
-            {text: "Apple", correct: true},
-        ]
-    },
-    {
-        id: 16,
-        title: "کدام گزینه تولید کننده موبایل میباشد؟",
-        answers: [
-            {text: "Kiwi", correct: false},
-            {text: "Orange", correct: false},
-            {text: "Banana", correct: false},
-            {text: "Apple", correct: true},
-        ]
-    },
-    {
-        id: 17,
-        title: "کدام گزینه تولید کننده موبایل میباشد؟",
-        answers: [
-            {text: "Kiwi", correct: false},
-            {text: "Orange", correct: false},
-            {text: "Banana", correct: false},
-            {text: "Apple", correct: true},
-        ]
-    },
-    {
-        id: 18,
-        title: "کدام گزینه تولید کننده موبایل میباشد؟",
-        answers: [
-            {text: "Kiwi", correct: false},
-            {text: "Orange", correct: false},
-            {text: "Banana", correct: false},
-            {text: "Apple", correct: true},
+            {text: "مرغ", correct: true},
+            {text: "تخم مرغ", correct: false},
+            {text: "هردو", correct: false},
+            {text: "هیچکدام", correct: false},
         ]
     },
 ]

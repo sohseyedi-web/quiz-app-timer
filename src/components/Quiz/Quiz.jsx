@@ -48,7 +48,6 @@ const Quiz = () => {
                     }
                 </ul>
             </div>
-
         </section>
     )
 }

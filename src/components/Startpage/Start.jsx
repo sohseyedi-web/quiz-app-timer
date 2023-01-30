@@ -1,12 +1,15 @@
 import "./Start.scss";
 import {useForm} from "react-hook-form";
+import {useQuiz} from "../../helpers/Quizcontext.jsx";
 
-const Start = ({setUser}) => {
+const Start = () => {
 
+    const {setUsername} = useQuiz()
     const {register, handleSubmit, formState: {errors}} = useForm()
 
     const onSubmit = (data) => {
-        setUser(data)
+        setUsername(data);
+        console.log(data)
     }
 
     return (

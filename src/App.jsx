@@ -1,15 +1,15 @@
 import Start from './components/Startpage/Start';
-import {useState} from "react";
 import Quiz from "./components/Quiz/Quiz.jsx";
+import {useQuiz} from "./helpers/Quizcontext.jsx";
 
 function App() {
 
-    const [userName, setUserName] = useState(null)
+    const {userName} = useQuiz()
 
     return (
         <>
             {
-                !userName ? (<Start setUser={setUserName}/>) : (<Quiz/>)
+                !userName ? (<Start/>) : (<Quiz/>)
             }
         </>
     )
