@@ -16,28 +16,30 @@
     }
 
     &__head {
-      height: 50%;
       position: relative;
-
+      width: 80%;
+      margin: 2rem auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       &-timing {
-        position: absolute;
-        content: '';
         border-radius: 50%;
         border: 5px solid #fff;
         display: flex;
         align-items: center;
         justify-content: center;
-        bottom: 5%;
-        left: 10%;
         font-weight: 600;
         width: 70px;
         height: 70px;
         font-size: 1.7rem;
       }
+      &-details{
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
     }
 
     &__body {
-      height: 50%;
 
       &-items {
         height: 100%;
@@ -91,6 +93,10 @@
         }
       }
     }
+
+    &__money{
+      display : none;
+    }
   }
 
   &-money {
@@ -137,6 +143,67 @@
     }
   }
 
+  @media screen and (max-width : 768px){
+    flex-direction: column;
+
+    &-box{
+      width: 100%;
+
+      &__money{
+        display: flex;
+        align-items: center;
+      justify-content: center;
+        width: 20%;
+        margin: 1rem auto;
+        font-size: 1.2rem;
+        text-align: center;
+        background-color: rgb(99, 102, 241);
+        padding: .5rem 1.2rem;
+        border-radius: .5rem;
+
+        &-item{
+          margin-left: .1rem;
+        }
+      }
+    }
+    &-money{
+      display: none;
+    }
+  }
+  @media screen and (max-width: 600px){
+    &-box{
+      width: 100%;
+
+      &__head{
+        width: 95%;
+
+        &-timing{
+          font-size: 1rem;
+          width: 50px;
+          height: 50px;
+          border: 3px solid #fff;
+        }
+        &-details{
+          font-size: 1rem;
+        }
+      }
+      &__body{
+        &-items{
+          &__title , &__result{
+            width: 95%;
+          }
+          &__title{
+            font-size: 1.05rem;
+          }
+        }
+      }
+      &__money{
+        width: 70%;
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+    }
+  }
 }
 
 @keyframes correct {
